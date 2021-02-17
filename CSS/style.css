@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background: #efdec1;
+    font-size: 29px;
+    font-family: 'Roboto Slab', serif;
+    background-image: url(../img/forest.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+.container {
+    width: 500px;
+    height: 90vh;
+    margin: 8px auto;
+    background: #869F44;
+    background-color: transparent;
+    border-radius: 10%;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    position:relative;
+    top: 0;
+}
+
+#question{
+   margin-bottom: 20px;
+   font-weight: bold; 
+   color:yellow;
+   text-shadow:2px 2px black;
+}
+
+#choices {
+    list-style: none;
+    margin-right: 1.0rem;
+    padding: 0px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#choices > li {
+   border:  1px solid darkgreen;
+   background-color: beige;
+   border-width: 0.3rem;
+   border-radius: 70px;
+   padding: 0px;
+   margin-top: 0px;
+   margin: 5px;
+   font-size: 25px;
+   font-weight: bold;
+}
+
+#choices > li:hover{
+   background: lightgreen; 
+}
+
+#choices > li.correct {
+  background: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+  font-weight: bold;
+}
+
+#choices > li.correct::after{
+ content: '...Well done!';
+ font-size: 22px;
+}
+
+#choices > li.wrong::after{
+    content: 
+    '..Oops..!';
+    font-size: 22px;
+}
+
+#choices > li.wrong {
+    background: #f8d8da;
+    border-color: #f5c6cb;
+    color: #721c24;
+    font-weight: bold;
+  }
+
+.score {
+ width: 80px;
+ bottom: 30rem;
+ position: absolute;
+ background : beige;
+ padding: 30px;
+ border-radius: 50%;
+ left: 65rem;
+ font-size: 25px;
+ text-align: center;
+ font-weight: bold;
+ /* transform: translateY(-500px); */
+}
+
+.momojiri{
+    width: 11rem;
+    bottom: 17rem;
+    left: 65rem;
+    position: absolute;
+    animation: momojiri 2s ease infinite;
+}
+
+@keyframes momojiri {
+    0% {
+        transform: scale(.4);
+    }
+
+    50% {
+        transform: scale(.6) rotate(-60deg); 
+    }
+  /* 30% {transform: translateY(-10px)} */
+}
+    
+
+#choices > li > img {
+    width: 170px;
+    height: 95px;
+    margin: 5px;
+    display: flex;
+    margin-left: 9rem;  
+    transition: .3s all ease
+}
+
+#btn {
+margin-left: 0rem;
+position: absolute;
+flex-direction: column;
+bottom:27%;
+left: 70%;
+margin: 40px;
+position: fixed;
+text-align: center;
+}
+
+#btn, #result > a {
+    background: darkblue;
+    border-radius: 50%;
+    border-width: 10rem;
+    color: yellow;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 0 rgb(226, 213, 30);
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+.continue {
+    margin-left: 0rem;
+    position: absolute;
+    flex-direction: column;
+    bottom:16%;
+    left: 72%;
+    margin: 40px;
+    position: fixed;
+    text-align: center;
+    background-color: red;
+    border-radius: 50%;
+    border-width: 10rem;
+    color:beige;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 0 rgb(226, 213, 30);
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+#result > a:hover{
+    background-color: rgb(146, 178, 32);
+}
+
+#btn:hover{
+    rgb(146, 178, 32);
+}
+
+#btn.disabled {
+    background: grey;
+    box-shadow: 0 4px 0 lightblue;
+    opacity: 0.7;
+}
+
+#result{
+    position: absolute;
+    width: 300px;
+    background: beige;
+    padding: 30px;
+    box-shadow: 2px 10px 10px rgba(0,0,0,0,2);
+    border: solid 4px darkblue;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 30%;
+    text-align: center;
+    font-weight: bold;
+    transition: 1s;
+}
+
+
+#result.hidden {
+    transform: translateY(-500px);
+}
+
+#result > p {
+    font-size: 24px;
+}
+
+
+.kobito{
+    width: 4rem;
+    animation: fluffy1 1s ease infinite;
+}
+
+@keyframes fluffy1 {
+    50% {transform: translateY(-18px)}
+    }
+
+#result > a {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
