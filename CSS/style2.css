@@ -33,9 +33,11 @@ h1{
     text-shadow: brown;
     font-weight: 1000;  
     margin-bottom: 30px;
+    text-shadow:2px 2px black;
+    padding: 30px;
 }
 
-.btn-1 {
+.button2 {
         font-size: 40px;
         justify-content: center;
         text-align: center;
@@ -53,7 +55,7 @@ h1{
         cursor: pointer;
     }
 
-    .btn:hover{
+.button2:hover{
         color: white;
     }
     

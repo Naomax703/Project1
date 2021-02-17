@@ -153,15 +153,16 @@ text-align: center;
 
 .continue {
     margin-left: 0rem;
+    font-size: :17px;
     position: absolute;
     flex-direction: column;
-    bottom:16%;
-    left: 72%;
+    bottom:10%;
+    left: 68%;
     margin: 40px;
     position: fixed;
     text-align: center;
     background-color: red;
-    border-radius: 50%;
+    border-radius: 30%;
     border-width: 10rem;
     color:beige;
     padding: 10px;
@@ -180,6 +181,12 @@ text-align: center;
 }
 
 #btn.disabled {
+    background: grey;
+    box-shadow: 0 4px 0 lightblue;
+    opacity: 0.7;
+}
+
+#btn.continue {
     background: grey;
     box-shadow: 0 4px 0 lightblue;
     opacity: 0.7;

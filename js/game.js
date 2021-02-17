@@ -9,7 +9,7 @@
     const level=document.querySelector('#level');
     const audio = document.querySelector('.not');
     const audio2 = document.querySelector('.good');
-    const btn1 = document.getElementById('btn-1').style.visibility="hidden";
+    const btn1 = document.getElementById('btn-1');
     // const audio3 = document.querySelector('.main').play();
     // audio3.volume = 0.2;
 
@@ -61,36 +61,41 @@
 
         if(li.textContent === quiz[currentNum].answers[0].answer) {
           li.classList.add('correct');
+
+          if(score < 300){
+            score+=100;
+
+          }else if (score >= 300){
+            score+=200;
+        }
+          const score1 = document.querySelector('.score');
+          score1.textContent = `Your score is ${score}!`
         
           audio2.play();
           audio2.volume = 0.2;
         } 
 
+
         else {
-          li.classList.add('wrong');
-          audio.play();
-          audio.volume = 0.2;
-        }
-        btn.classList.remove('disabled');
-
-        if(score < 300){
-            score+=100;
-          }else if (score >= 300){
-            score+=200;
-            btn.textContent = "LEVEL UP";
+            li.classList.add('wrong');
+            audio.play();
+            audio.volume = 0.2;
           }
+          btn.classList.remove('disabled');
+        }  
 
-          const score1 = document.querySelector('.score');
-          score1.textContent = `Your score is ${score}!`
-       
-         
-    }
-  
-  
+  function levelUP(li){
+    if(li.textContent === quiz[currentNum].answers[0].answer && score === 300) {
+      btn1.classList.add('continue');
+  } else {
+    btn1.classList.remove('continue');
+  }
+}
         
   function Quiz() {
     answerd = false;
     question.textContent = quiz[currentNum].q;
+    btn1.classList.remove('continue');
 
   if(currentNum === 0 && answerd === false){
     const score1 = document.querySelector('.score');
@@ -118,6 +123,7 @@
        img.src = choice.img;
        li.addEventListener('click', () => {
         checkAnswer(li);
+        levelUP(li);
        });
        choices.appendChild(li);  
        li.appendChild(img);  
