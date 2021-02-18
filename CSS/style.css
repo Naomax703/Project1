@@ -17,7 +17,7 @@ body{
 
 .container {
     width: 500px;
-    height: 90vh;
+    height: 80vh;
     margin: 8px auto;
     background: #869F44;
     background-color: transparent;
@@ -92,7 +92,7 @@ body{
  background : beige;
  padding: 30px;
  border-radius: 50%;
- right: 12vw;
+ right: 14vw;
  font-size: 25px;
  text-align: center;
  font-weight: bold;
@@ -100,7 +100,7 @@ body{
 }
 
 .momojiri{
-    width: 11rem;
+    width: 15vw;
     bottom: 40vh;
     right: 12vw;
     position: fixed;

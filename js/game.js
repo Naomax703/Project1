@@ -46,7 +46,7 @@
           img: "./img/Catherine de medicis.jpg",
         },
         { answer: "Marie Antoinette", img: "./img/marie.jpg" },
-        { answer: "'Napoléon", img: "./img/napoleon.jpg" },
+        { answer: "Napoléon", img: "./img/napoleon.jpg" },
         { answer: "Henri ll", img: "./img/henri.jpg" },
       ],
     },
@@ -127,12 +127,11 @@
       li.textContent === quiz[currentNum].answers[0].answer &&
       score === 300
     ) {
-      console.log("ici remove")
+      console.log("ici remove");
       modal.classList.remove("takeout");
       mask.classList.remove("takeout");
     }
   }
-
 
   function Quiz() {
     answerd = false;

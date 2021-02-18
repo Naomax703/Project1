@@ -18,8 +18,13 @@
     
 }
 
+#audio{
+right:12vw;
+
+}
+
 img {
-    width: 7rem; 
+    width: 9vw; 
     animation: float 1s linear infinite;
     transform-origin: 50% 50%;
    }
@@ -43,7 +48,7 @@ h1{
         text-align: center;
         text-decoration: none;
         color: black;
-        width: 25rem;
+        width: 25vh;
         background: rgb(146, 178, 32);
         border: 2px solid;
         border-color: darkgreen;
