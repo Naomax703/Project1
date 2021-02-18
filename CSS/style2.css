@@ -19,7 +19,7 @@
 
 
 img {
-    width: 100px; 
+    width: 130px; 
     bottom: 10vw;
     top: 0;
     animation: float 1s linear infinite;
@@ -42,11 +42,9 @@ h1{
 
 .button2 {
         font-size: 40px;
-        justify-content: center;
         text-align: center;
         text-decoration: none;
         color: black;
-        width: 25vw;
         background: rgb(146, 178, 32);
         border: 2px solid;
         border-color: darkgreen;
