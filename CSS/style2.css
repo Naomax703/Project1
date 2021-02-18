@@ -4,27 +4,24 @@
 }
 .container1 {
     width: 400px;
-    height: 40vh;
-    margin: 8px auto;
-    margin-top: 0;
-    border-radius: 3rem;
-    padding: 20px;
+    height: 30vh;
+    margin: 2px auto;
+    border-radius: 3rem;  
     text-align: center;
     text-decoration: none;
     position:relative;
     color:beige;
     background-repeat: no-repeat;
     background-position: right;
+    top: 0;
     
 }
 
-#audio{
-right:12vw;
-
-}
 
 img {
-    width: 9vw; 
+    width: 100px; 
+    bottom: 10vw;
+    top: 0;
     animation: float 1s linear infinite;
     transform-origin: 50% 50%;
    }
@@ -37,9 +34,10 @@ h1{
     font-size: 80px;
     text-shadow: brown;
     font-weight: 1000;  
-    margin-bottom: 30px;
     text-shadow:2px 2px black;
-    padding: 30px;
+    padding: 25px;
+    margin-bottom: 25px;
+    margin-left: 15px;
 }
 
 .button2 {
@@ -48,11 +46,11 @@ h1{
         text-align: center;
         text-decoration: none;
         color: black;
-        width: 25vh;
+        width: 25vw;
         background: rgb(146, 178, 32);
         border: 2px solid;
         border-color: darkgreen;
-        margin-top: 5rem;
+        margin-top: 50px;
         border-radius: 50%;
         padding : 20px;
         transform: rotate(360deg);
