@@ -87,12 +87,12 @@ body{
 
 .score {
  width: 80px;
- bottom: 30rem;
+ bottom: 68vh;
  position: absolute;
  background : beige;
  padding: 30px;
  border-radius: 50%;
- left: 65rem;
+ right: 12vw;
  font-size: 25px;
  text-align: center;
  font-weight: bold;
@@ -101,8 +101,8 @@ body{
 
 .momojiri{
     width: 11rem;
-    bottom: 17rem;
-    left: 65rem;
+    bottom: 40vh;
+    right: 12vw;
     position: fixed;
     animation: momojiri 2s ease infinite;
 }
@@ -132,8 +132,8 @@ body{
 margin-left: 0rem;
 position: absolute;
 flex-direction: column;
-bottom:27%;
-left: 70%;
+bottom:28vh;
+right: 10vw;
 margin: 40px;
 position: fixed;
 text-align: center;
@@ -142,7 +142,7 @@ text-align: center;
 #btn, #result > a {
     background: darkblue;
     border-radius: 50%;
-    border-width: 10rem;
+    border-width: 1px;
     color: yellow;
     padding: 10px;
     cursor: pointer;
@@ -151,26 +151,6 @@ text-align: center;
     margin-bottom: 10px;
 }
 
-.continue {
-    margin-left: 0rem;
-    font-size: :17px;
-    position: absolute;
-    flex-direction: column;
-    bottom:10%;
-    left: 68%;
-    margin: 40px;
-    position: fixed;
-    text-align: center;
-    background-color: red;
-    border-radius: 30%;
-    border-width: 10rem;
-    color:beige;
-    padding: 10px;
-    cursor: pointer;
-    box-shadow: 0 4px 0 rgb(226, 213, 30);
-    margin: 10px;
-    margin-bottom: 10px;
-}
 
 #result > a:hover{
     background-color: rgb(146, 178, 32);
@@ -233,6 +213,54 @@ text-align: center;
     text-decoration: none;
     cursor: pointer;
 }
+
+#modal {
+    background: lightgreen;
+    width: 400px;
+    padding: 40px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: yellowgreen;
+    position: absolute;
+    margin-top: 15rem;
+    top: 40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 2;
+    transition: 0.4s;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .takeout {
+      visibility: hidden;
+  }
+  
+  #modal p {
+    margin: 0 0 20px;
+  }
+  
+  #mask.hidden {
+    display: none;
+  }
+  
+  #modal.hidden {
+    transform: translate(0, -500px);
+  }
+
+  #close{
+        font-size: 23px;
+        cursor: pointer;
+        width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        text-align: center;
+        padding: 12px;
+        margin: 16px auto 0;
+        background: tomato;
+        color: white;
+      }
 
 
 
