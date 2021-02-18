@@ -22,11 +22,22 @@
         {answer: "Kyoto", img: "./img/kyoto.jpg"},
         {answer: "Tokyo", img: "./img/tokyo.jpg"},
         {answer: "Versailles", img: "./img/versailles.jpg"}]},
+        {q: 'What did the romans drop in wine to improve the health before drinking?', 
+        answers:[{answer: "Toast", img: "./img/toast.jpg"},
+        {answer: "Egg", img: "./img/egg.jpg"},
+        {answer: "Water", img: "./img/water.jpg"},
+        {answer: "Olive oil", img: "./img/olive.jpeg"}]},
         {q: 'Who introduced cutlery in France?', 
         answers:[{answer:"Catherine de Médicis", img: "./img/Catherine de medicis.jpg"},
         {answer: "Marie Antoinette", img: "./img/marie.jpg"},
         {answer: "'Napoléon", img: "./img/napoleon.jpg"},
         {answer: "Henri ll", img: "./img/henri.jpg"}]},
+
+        {q: 'Which country does not have a capital?', 
+        answers:[{answer:"Republic of Nauru", img:"./img/nauru.jpg"},
+        {answer: "Vanuatu", img:"./img/vanautu.jpg"},
+        {answer: "Tuvalu", img:"./img/tuvaku.jpg"},
+        {answer: "Niue", img:"./img/niue.jpg"}]},
         {q: 'What was the first European civilization in Japan?', 
         answers:[{answer: "Portuguese", img: "./img/portugal.jpg"},
         {answer: "Spanish", img: "./img/spain.jpg"},
@@ -38,6 +49,7 @@
         {answer: "Céline Dion", img:"./img/celine.jpg"},
         {answer: "John Cabot", img:"./img/jhon.jpeg"}]}
         ];
+
 
     let currentNum = 0;
     let answerd = false;
@@ -111,8 +123,7 @@
 
 
     const shuffledChoices = shuffle([...quiz[currentNum].answers]);
-    // [...quiz[currentNum].img]
-    // console.log((quiz[currentNum].answer));
+    // console.log((quiz[currentNum].answers));
     // console.log((quiz[currentNum].img));
     shuffledChoices.forEach(choice => {
 
