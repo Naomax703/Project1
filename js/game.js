@@ -98,6 +98,7 @@
 
   function levelUP(li){
     if(li.textContent === quiz[currentNum].answers[0].answer && score === 300) {
+      btn1.textContent = `Level UP! Your score will be +200!`
       btn1.classList.add('continue');
   } else {
     btn1.classList.remove('continue');
