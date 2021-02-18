@@ -5,23 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>History Trivia!</title>
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./CSS/style2.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" type="text/css" media="screen and (max-width:500px)">
-    
-
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-   <audio id="main" source src="./audio/n51.mp3"></audio>
-   <div class="container1">
-    <img class="kobito1" src="img/kobito 2.png">
-           <h1>WORLD TRIVIA</h1>
-           <a href="./index1.html" class="button2">START</a>
-       </div> 
-   </div>
-    <script type="module" src="./js/main.js"></script>
+    <audio class="main" src="./audio/n51.mp3"></audio>
+    <section class="container">
+       <p id="question">What is A ?</p>
+       <ul id="choices">
+         <audio class="good" src ="audio/correct001 copy.mp3"></audio>
+         <audio class="not" src ="audio/not correct.mp3"></audio>
+       </ul>
+    </section>
+    <div id="btn" class="disabled">Next Question</div>
+    <div id="btn-1" class="continue" href="">Level UP!<br>Your score will be +200</div>
+    
+    <section class="point">
+      <a class="home" href="./index.html">Home</a>
+      <div class="score"></div>
+      <img class="momojiri" src="img/kinoko.gif">
+    </section>
+    <section id="result" class="hidden">
+      <p></p>
+        <img class="kobito" src="img/kobito 2.png">
+      <a class="replay" href="">Replay？</a>
+      <a class="replay" href="./index.html">Home</a>
+    </section>
+    <script src="./js/game.js"></script>
 </body>
 </html>
-
